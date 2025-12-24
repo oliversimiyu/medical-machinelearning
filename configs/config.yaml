@@ -1,0 +1,75 @@
+# Medical Insurance Fraud Detection - Configuration File
+
+# Data Settings
+data:
+  n_samples: 10000
+  fraud_ratio: 0.05
+  test_size: 0.2
+  random_state: 42
+  synthetic_data_path: "data/synthetic/claims_data.csv"
+
+# Graph Construction
+graph:
+  k_neighbors: 5
+  similarity_features:
+    - claim_amount
+    - patient_age
+    - num_procedures
+    - hospital_stay_days
+    - diagnosis_complexity
+
+# Graph SMOTE
+graph_smote:
+  k_neighbors: 5
+  sampling_strategy: 0.8
+  random_state: 42
+
+# Model Parameters
+models:
+  random_forest:
+    n_estimators: 200
+    max_depth: 15
+    min_samples_split: 10
+    min_samples_leaf: 4
+    class_weight: "balanced"
+    random_state: 42
+    n_jobs: -1
+  
+  xgboost:
+    n_estimators: 200
+    learning_rate: 0.1
+    max_depth: 7
+    scale_pos_weight: 5
+    random_state: 42
+    n_jobs: -1
+  
+  lightgbm:
+    n_estimators: 200
+    learning_rate: 0.1
+    max_depth: 7
+    num_leaves: 31
+    class_weight: "balanced"
+    random_state: 42
+    n_jobs: -1
+  
+  gnn:
+    hidden_dim: 64
+    output_dim: 2
+    dropout: 0.5
+    learning_rate: 0.01
+    weight_decay: 0.0005
+    epochs: 100
+
+# Training
+training:
+  cv_folds: 5
+  scoring: "f1"
+  verbose: 1
+
+# Paths
+paths:
+  data_dir: "data"
+  models_dir: "models"
+  results_dir: "results"
+  figures_dir: "results/figures"
+  reports_dir: "results/reports"

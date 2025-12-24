@@ -1,0 +1,29 @@
+
+### PROVIDER STATISTICS ###
+Total Providers: 5410
+Fraudulent Providers: 575 (10.63%)
+Facility Types: {'Diagnostic Center': 1108, 'Hospital': 1100, 'Specialist Clinic': 1088, 'Pharmacy': 1060, 'Clinic': 1054}
+Average Claims per Provider: 200.48
+
+### PATIENT STATISTICS ###
+Total Patients: 138556
+Average Age: 56.45
+Gender Distribution: {'F': 69279, 'M': 69277}
+Risk Categories: {'Low': 85743, 'Moderate': 32125, 'High': 20688}
+Average Chronic Conditions: 1.40
+
+### INPATIENT CLAIMS STATISTICS ###
+Total Inpatient Claims: 40474
+Average Length of Stay: 15.49 days
+Average Claim Amount: KES 238,247.55
+Approval Status: {'Approved': 34295, 'Pending': 4098, 'Rejected': 2081}
+
+### OUTPATIENT CLAIMS STATISTICS ###
+Total Outpatient Claims: 557835
+Average Claim Amount: KES 25,750.98
+Service Types: {'Consultation': 93436, 'Preventive Care': 93189, 'Therapy': 93068, 'Minor Procedure': 92784, 'Follow-up': 92723, 'Diagnostic': 92635}
+Approval Status: {'Approved': 502130, 'Pending': 39166, 'Rejected': 16539}
+
+### INSURANCE AGENT STATISTICS ###
+Total Agents: 1000
+Average Experience: 13.13 years
