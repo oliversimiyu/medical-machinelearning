@@ -10,10 +10,10 @@ lightgbm>=3.3.0
 imbalanced-learn>=0.9.0
 
 # Deep Learning & Graph Neural Networks
+# Note: Install torch first, then PyTorch Geometric packages separately
 torch>=2.0.0
-torch-geometric>=2.3.0
-torch-scatter>=2.1.0
-torch-sparse>=0.6.0
+# torch-geometric and related packages should be installed after torch
+# See installation instructions below
 
 # Graph Processing
 networkx>=2.6.0
